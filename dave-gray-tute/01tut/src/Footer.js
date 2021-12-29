@@ -1,10 +1,11 @@
 import React from "react";
 
-function Footer() {
-  const today = new Date();
+function Footer({ length }) {
   return (
     <footer>
-      <p>Copyright &copy; {today.getFullYear()}</p>
+      <p>
+        {length} list {length === 1 ? "item" : "items"}.
+      </p>
     </footer>
   );
 }
